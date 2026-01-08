@@ -1,5 +1,5 @@
 #include "Zombie.hpp"
-#include <cstdlib> // Para atoi
+#include <cstdlib>
 
 int main(int argc, char **argv)
 {
@@ -9,7 +9,7 @@ int main(int argc, char **argv)
         return (-1);
     }
 
-    int N = std::atoi(argv[1]); // Converte string "5" para int 5
+    int N = std::atoi(argv[1]);
     std::string name = argv[2];
 
     if (N <= 0)
