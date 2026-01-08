@@ -1,7 +1,7 @@
 # Nome do executável 
 NAME		= megaphone
 
-# Compilador e Flags [cite: 23, 24]
+# Compilador e Flags
 CXX			= c++
 CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 
@@ -9,7 +9,7 @@ CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
 SRCS		= megaphone.cpp
 OBJS		= $(SRCS:.cpp=.o)
 
-# Regras Principais [cite: 64]
+# Regras Principais
 all: $(NAME)
 
 $(NAME): $(OBJS)
@@ -23,5 +23,4 @@ fclean: clean
 
 re: fclean all
 
-# Phony para evitar conflitos com arquivos de mesmo nome
 .PHONY: all clean fclean re
